@@ -9,18 +9,23 @@ from Piece import Piece
 
 
 '''
+board = 
+| row[0] white pieces 
+| .
+| .
+| .  
+| .
+| row[6] black pawns 
 |
-|
-|
-|
- 
+column[0] .....  column [2]
+________________ 
 '''
 class Board:
     def __init__(self):
         self.board = []
 
-    def getSpot (self, x, y):
-        return self.board[x][y]
+    def getSpot (self, row, column):
+        return self.board[row][column]
 
     def setBoard (self):
         for row  in range (8):

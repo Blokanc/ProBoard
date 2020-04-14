@@ -1,8 +1,8 @@
 class Spot:
-    def __init__ (self, piece, x, y):
+    def __init__ (self, piece, row, column):
         self.piece = piece
-        self.x = x
-        self.y = y
+        self.row = row
+        self.column = column
 
 
     def getPeice (self):
